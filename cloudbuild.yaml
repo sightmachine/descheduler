@@ -1,8 +1,5 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'gcr.io/sightmachine-178216/descehduler:latest', '.']
-- name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/sightmachine-178216/descheduler:$TAG_NAME', '.']
 images:
 - 'gcr.io/sightmachine-178216/descheduler:latest'
-- 'gcr.io/sightmachine-178216/descheduler:$TAG_NAME'
